@@ -23,11 +23,6 @@ public class HelloWorldREST {
 	@Path("{name}")
 	public Response sayHello(@PathParam("name") String name) {
 
-		/* Load core library. */
-		// Injesting through Autowiring/Inject has some issue, so instatitating
-		// explicitly
-		// HelloWorldCore hwc = new HelloWorldCore();
-
 		/* Stream result */
 		return Response.status(200).entity(hwc.sayHello(name)).build();
 
@@ -37,11 +32,6 @@ public class HelloWorldREST {
 	@Path("json/{name}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response sayHelloJSON(@PathParam("name") String name) {
-
-		/* Load core library. */
-		// Injesting through Autowiring/Inject has some issue, so instatitating
-		// explicitly
-		// HelloWorldCore hwc = new HelloWorldCore();
 
 		/* Stream result */
 		return Response.status(200).entity(hwc.sayHelloJSON(name)).build();

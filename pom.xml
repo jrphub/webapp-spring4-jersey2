@@ -116,11 +116,6 @@
 		</dependency>
 
 		<!-- test -->
-		<dependency>
-            <groupId>org.glassfish.jersey.test-framework.providers</groupId>
-            <artifactId>jersey-test-framework-provider-jetty</artifactId>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -136,7 +131,6 @@
 		<dependency>
     		<groupId>org.glassfish.jersey.test-framework.providers</groupId>
     		<artifactId>jersey-test-framework-provider-grizzly2</artifactId>
-    		<version>${jersey.version}</version>
 		</dependency>
         
         <!-- Spring -->
