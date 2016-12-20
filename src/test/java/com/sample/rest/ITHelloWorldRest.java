@@ -11,7 +11,7 @@ import org.glassfish.jersey.test.spi.TestContainerFactory;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class TestHelloWorldRest extends AppSubJerseyTest {
+public class ITHelloWorldRest extends AppSubJerseyTest {
 
 	@Override
 	protected TestContainerFactory getTestContainerFactory() {
